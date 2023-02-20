@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: web-nodejs-cnw3-zsld
+  namespace: agroom-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload:ZzBzx-web-nodejs-cnw3-zsld
+        name: my-nodejs
+        resources: {}
+status: {}
