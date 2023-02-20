@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: catalog-spring-boot-cnw3-2ncj
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ZzBzx-catalog-spring-boot-cnw3-2ncj
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d31a0136a8e8cd54cc0561f0dbac5cd62037e14abf304cc9bf4bb07d88f5c405
         name: my-java-springboot
         ports:
         - containerPort: 8081
