@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: catalog-spring-gradle-cnw3-wnj1
+  namespace: agroom-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload:ZzBzx-catalog-spring-gradle-cnw3-wnj1
+        name: my-java-springboot
+        resources: {}
+status: {}
