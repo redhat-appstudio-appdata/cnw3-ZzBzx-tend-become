@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: catalog-spring-gradle-cnw3-wnj1
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: catalog-spring-gradle-cnw3-wnj1
+    app.kubernetes.io/part-of: cnw3
+  name: catalog-spring-gradle-cnw3-wnj1
+  namespace: agroom-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: catalog-spring-gradle-cnw3-wnj1
+    weight: null
+status: {}

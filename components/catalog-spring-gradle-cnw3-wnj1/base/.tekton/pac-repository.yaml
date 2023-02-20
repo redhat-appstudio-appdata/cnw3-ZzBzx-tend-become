@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: cnw3
+    appstudio.openshift.io/component: catalog-spring-gradle-cnw3-wnj1
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: catalog-spring-gradle-cnw3-wnj1
+  namespace: agroom-tenant
+spec:
+  url: https://github.com/alexgroom/cnw3
