@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: web-nodejs-cnw3-zsld
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: web-nodejs-cnw3-zsld
+    app.kubernetes.io/part-of: cnw3
+  name: web-nodejs-cnw3-zsld
+  namespace: agroom-tenant
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: web-nodejs-cnw3-zsld
+status:
+  loadBalancer: {}
