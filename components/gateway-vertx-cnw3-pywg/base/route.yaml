@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: gateway-vertx-cnw3-pywg
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: gateway-vertx-cnw3-pywg
+    app.kubernetes.io/part-of: cnw3
+  name: gateway-vertx-cnw3-pywg
+  namespace: agroom-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: gateway-vertx-cnw3-pywg
+    weight: null
+status: {}
